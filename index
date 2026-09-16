@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MEN'S — modern men's fashion storefront concept.">
+  <title>MEN'S | Modern Men's Fashion</title>
+
+  <!-- Typography close to the Figma concept -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="site-header" id="top">
+    <a class="logo" href="#top">MEN'S</a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#top">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#categories">Clothing</a>
+      <a href="#trending">Footwear</a>
+      <a href="#shop">Accessories</a>
+      <a href="#lookbook">Lookbook</a>
+      <a href="#sale">Sale</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" aria-label="Account" title="Account">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0M12 13a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"/></svg>
+      </button>
+      <button class="icon-btn" id="wishlistButton" aria-label="Wishlist" title="Wishlist">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.7c0 5.5-8.8 10.3-8.8 10.3S3.2 14.2 3.2 8.7A4.7 4.7 0 0 1 12 6a4.7 4.7 0 0 1 8.8 2.7Z"/></svg>
+      </button>
+      <button class="menu-btn" id="menuButton" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="#top">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#categories">Clothing</a>
+    <a href="#trending">Footwear</a>
+    <a href="#shop">Accessories</a>
+    <a href="#lookbook">Lookbook</a>
+    <a href="#sale">Sale</a>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" aria-label="Autumn collection promotion">
+      <img
+        src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?auto=format&fit=crop&w=1600&q=85"
+        alt="Man wearing a brown jacket"
+      >
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">NEW SEASON</p>
+        <h1>Define<br>Your Style</h1>
+        <p class="offer">UP TO <strong>30%</strong> OFF</p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="#shop">Shop now</a>
+          <a class="btn btn-glass" href="#trending">New Arrival</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESSENTIALS -->
+    <section class="section" id="categories">
+      <div class="section-heading">
+        <h2>ESSENTIALS</h2>
+        <span></span>
+      </div>
+
+      <div class="category-grid">
+        <a class="category-card" href="#shop">
+          <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=700&q=85" alt="Upper wear">
+          <span>Upper Wear</span>
+        </a>
+        <a class="category-card" href="#shop">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=85" alt="Bottom wear">
+          <span>Bottom Wear</span>
+        </a>
+        <a class="category-card" href="#shop">
+          <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=700&q=85" alt="Formal wear">
+          <span>Formal Wear</span>
+        </a>
+        <a class="category-card" href="#shop">
+          <img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=700&q=85" alt="Accessories">
+          <span>Accessories</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- PROMO -->
+    <section class="collection-banner" id="sale">
+      <div class="collection-copy">
+        <p>Autumn Collection</p>
+        <span>Limited Time Offer</span>
+        <a class="btn btn-dark" href="#shop">Shop Now</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=900&q=85" alt="Autumn menswear">
+      <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=700&q=85" alt="Brown leather jacket">
+    </section>
+
+    <!-- TRENDING -->
+    <section class="section" id="trending">
+      <div class="section-heading">
+        <h2>TRENDING NOW</h2>
+        <span></span>
+      </div>
+
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-name="Street Style" data-price="150">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=700&q=85" alt="Street style outfit">
+            <button class="heart" aria-label="Add Street Style to wishlist">♡</button>
+          </div>
+          <div class="product-info">
+            <div><h3>Street Style</h3><p>$150</p></div>
+            <button class="cart-btn" aria-label="Add Street Style to cart">🛒</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Brown Jacket" data-price="59">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=700&q=85" alt="Brown jacket">
+            <button class="heart" aria-label="Add Brown Jacket to wishlist">♡</button>
+          </div>
+          <div class="product-info">
+            <div><h3>Brown Jacket</h3><p>$59</p></div>
+            <button class="cart-btn" aria-label="Add Brown Jacket to cart">🛒</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Casual Blazer" data-price="80">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1610652492500-ded49ceeb378?auto=format&fit=crop&w=700&q=85" alt="Casual blazer outfit">
+            <button class="heart" aria-label="Add Casual Blazer to wishlist">♡</button>
+          </div>
+          <div class="product-info">
+            <div><h3>Casual Blazer</h3><p>$80</p></div>
+            <button class="cart-btn" aria-label="Add Casual Blazer to cart">🛒</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-name="Casual Wear" data-price="100">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?auto=format&fit=crop&w=700&q=85" alt="Casual wear collection">
+            <button class="heart" aria-label="Add Casual Wear to wishlist">♡</button>
+          </div>
+          <div class="product-info">
+            <div><h3>Casual Wear</h3><p>$100</p></div>
+            <button class="cart-btn" aria-label="Add Casual Wear to cart">🛒</button>
+          </div>
+        </article>
+      </div>
+      <p class="cart-status" id="cartStatus" aria-live="polite"></p>
+    </section>
+
+    <!-- LOOKBOOK / ABOUT -->
+    <section class="lookbook" id="lookbook">
+      <div class="lookbook-copy">
+        <h2>Explore Our<br>Products</h2>
+        <p>
+          Discover the essentials of modern men's style — from premium clothing
+          and sharp tailoring to timeless accessories, every piece in our
+          collection is designed for comfort, quality, and confidence.
+        </p>
+        <p>
+          Explore shirts, trousers, watches, belts, and more — curated to elevate
+          your everyday and special occasions.
+        </p>
+        <p>
+          Your wardrobe upgrade starts here. We bring the latest in modern
+          clothing, footwear, and accessories — built for the man who leads with
+          style.
+        </p>
+      </div>
+
+      <div class="lookbook-collage">
+        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=85" alt="Leather travel bag">
+        <img src="https://images.unsplash.com/photo-1523779917675-b6ed3a42a561?auto=format&fit=crop&w=900&q=85" alt="Leather bracelet">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=85" alt="Modern menswear">
+      </div>
+    </section>
+
+    <!-- SOCIAL -->
+    <section class="social" aria-label="Social media">
+      <h2>Social Media</h2>
+      <div class="social-links">
+        <a href="#" aria-label="WhatsApp">◔</a>
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="#" aria-label="Facebook">f</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="shop">
+    <div class="footer-brand">
+      <a class="logo footer-logo" href="#top">MEN'S</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>CONTACT</h3>
+      <ul>
+        <li>Address<br>Lahore, Punjab, Pakistan</li>
+        <li>Email<br>hello@example.com</li>
+        <li>Phone<br>+92 300 1234567</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>SHOPPING</h3>
+      <ul>
+        <li><a href="#trending">New Arrivals</a></li>
+        <li><a href="#trending">Best Sellers</a></li>
+        <li><a href="#sale">Sale</a></li>
+        <li><a href="#trending">Trending</a></li>
+        <li><a href="#categories">Collections</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>CATEGORIES</h3>
+      <ul>
+        <li><a href="#categories">Upper Wear</a></li>
+        <li><a href="#categories">Party Wear</a></li>
+        <li><a href="#categories">Casual Wear</a></li>
+        <li><a href="#categories">Formal Wear</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>HELP & INFORMATION</h3>
+      <ul>
+        <li>About</li>
+        <li>Contact Us</li>
+        <li>FAQs</li>
+        <li>Shipping</li>
+        <li>Returns</li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">© 2026 MEN'S. Portfolio concept by LearnWithria.</div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
